@@ -143,3 +143,82 @@ Step 7: Launch an instance in VPC 2
 ## Same as Previous Steps
 
 ![image](https://github.com/user-attachments/assets/b13a5209-d086-4a5c-b3d2-9db1e349d1ca)
+
+
+
+
+# Step 7: Connect to Instance 1
+
+
+1. Use EC2 Instance Connect to connect to your first EC2 instance.
+2. Fix a connection error!
+
+![image](https://github.com/user-attachments/assets/8cf70b72-f320-406d-968f-49f07dc13222)
+
+
+3. Still in your EC2 console, select the checkbox next to Instance - NextWork VPC 1.
+4. Select Connect.
+
+![image](https://github.com/user-attachments/assets/55f69b2d-8e3a-4a4f-b9be-d03cb2bd0a82)
+
+![image](https://github.com/user-attachments/assets/e97e08fb-a7d5-4936-a578-003ca274eb63)
+
+
+5. Select Allocate Elastic IP addresses.
+
+![image](https://github.com/user-attachments/assets/11381f08-dd3f-4074-b43c-041e9690986c)
+
+6. Leave all default options.
+
+
+![image](https://github.com/user-attachments/assets/06317e62-e666-464b-958e-31efc1bb20fa)
+
+
+7. Select Allocate.
+8. Refresh your page, then select the new IP address you've set up.
+9. Select the Actions dropdown, then select Associate Elastic IP address.
+10. Under Instance, select Instance - NextWork VPC 1.
+
+
+![image](https://github.com/user-attachments/assets/18078aa0-7ef3-4c69-9dc6-b5c996d5e569)
+
+
+![image](https://github.com/user-attachments/assets/49e5bea2-b6cf-4b2e-910e-826a63799489)
+
+
+11. In the Inbound rules tab, select Edit inbound rules.
+12. Select Add rule.
+13. For your new rule, configure the Type as SSH.
+14. Then, under Source type, select Anywhere-IPv4.
+15. Select Save rules.
+
+![image](https://github.com/user-attachments/assets/de622493-65eb-4743-97d9-38cfcaa1019c)
+
+
+16. With that modified, refresh your EC2 console's Instances page.
+17. Select your Instance-NextWork VPC 1 and select Connect again.
+18. Select Connect in the EC2 Instance Connect setup page.
+19. Success.
+
+![image](https://github.com/user-attachments/assets/c875d73d-5a62-409f-a0b7-18b57d182091)
+
+
+# Step 8: Test VPC Peering
+
+
+1. Get Instance 1 to send test messages to Instance 2.
+2. Solve connection errors until Instance 2 is able to send messages back.
+
+
+![image](https://github.com/user-attachments/assets/f43cc525-8ca5-4004-921c-9854337004e7)
+
+
+3. Leave open the EC2 Instance Connect tab, but head back to your EC2 console in a new tab.
+4. Select Instance - NextWork VPC 2.
+5. Copy Instance - NextWork VPC 2's Private IPv4 address.
+
+
+![image](https://github.com/user-attachments/assets/03ce626b-cb22-4692-9d9f-861ae1e43f4a)
+
+
+![image](https://github.com/user-attachments/assets/620438fd-027d-48db-85d2-e6f6e891b8c5)
